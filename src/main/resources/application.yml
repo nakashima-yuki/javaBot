@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: bot
+  datasource:
+    url: jdbc:mysql://localhost:3306/bot
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+
+server:
+  port: 9901
+
+
