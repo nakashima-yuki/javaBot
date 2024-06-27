@@ -14,8 +14,7 @@ public class PasswordTools {
      */
     public static String encrypt(String password,String salt) {
         // 密码=md5(随机盐值+密码)
-        String finalPassword = DigestUtils.md5DigestAsHex((salt + password).getBytes());
-        return salt + "$" + finalPassword;
+        return DigestUtils.md5DigestAsHex((salt + password).getBytes());
     }
 
     /**
